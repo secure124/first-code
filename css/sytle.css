@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ h1, h2, h3, h4, p {
+    font-family: 'Trebuchet MS';
+ }
+ a, ul {
+    text-decoration: none;
+    list-style: none;
+ }
+
+ nav {
+    background-color: white;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.219);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 10%;
+    position: sticky;
+    top: 0;
+ }
+nav p {
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+nav p a {
+    color: black;
+}
+nav .main-btns {
+    display: flex;
+    gap: 0.8em;
+}
+nav .main-btns button {
+    padding: 8px 19px;
+    border-radius: 100px;
+    font-size: 1.1em;
+}
+nav .main-btns button:nth-child(1) {
+    background-color: transparent;
+    border: 2px solid darkblue;
+}
+nav .main-btns button:nth-child(2) {
+    background-color: darkblue;
+    border: 2px solid rgb(249, 249, 252);
+    color: white;
+}
+main {
+    min-height: 450px;
+    border-bottom: 3px solid darkblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.281), rgba(0, 0, 0, 0.301) ), url(/img/back.jpg);
+    background-position: center;
+    background-size: cover;
+}
+main h1 {
+    color: white;
+    text-transform: capitalize;
+    font-size: 3em;
+}
+main button {
+    padding: 0.8em 4em;
+    border-radius: 100px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    background-color: darkblue;
+    color: white;
+    transition: all .3s ease-in;
+}
+main button:hover {
+    background-color: darkblue;
+    transform: scale(1.1, 1.1);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.219);
+}
+main p, main p a {
+    color: white;
+}
+main p a {
+    font-weight: bold;
+}
+.sec-1 {
+    background-color: rgb(242, 242, 245);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0;
+    gap: 3em;
+    min-height: 450px;
+}
+
+.sec-1 h1 {
+    font-size: 2.5em;
+    font-weight: 100;
+}
+.sec-1-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;    
+    flex-direction: column;
+}
+.sec-1-inner p {
+    font-weight: bold;
+}
+.sec-1-inner button {
+    background-color: transparent;
+    border: 1px solid #0082CE;
+    border-radius: 100px;
+    color: #0082CE;
+    font-weight: bold;
+    padding: 0.8em 4em;
+    
+}
+
+.sec2 {
+    background-color: rgb(3, 26, 71);
+    padding: 2em 0;
+    flex-wrap: wrap;
+}
+
+.sec2-inner {
+    display: flex;
+    margin: 1em 0;
+    justify-content: center;
+    min-height: 350px;
+    align-items: center;
+    gap: 2em;
+}
+
+.sec2-inner div{
+    width: 40%;
+    padding-top: 95px;
+    margin: 0 20px;
+}
+.first{
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+    color: white;
+}
+.sec2 div a:hover {
+    text-decoration: underline;
+}
+.sec2 div a {
+    transition: ease-in;
+    color: white;
+    text-decoration: solid;
+    
+}
+
+.sec2-inner div h1 {
+    margin-bottom: 1em;
+    color: rgb(255, 255, 255);
+}
+
+.sec2-inner div p {
+    color: white;
+    margin-bottom: 1em;
+}
+footer {
+    padding: 12px 16px;
+    display: flex;
+    min-height: 90px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@media (max-width: 885px) {
+    main h1 {
+        font-size: 2em;
+    }
+    .sec-1 h1{
+        font-size: 1.5em;
+    }
+}
+@media (max-width: 590px) {
+    main h1, .first h1 {
+        width: 60%;
+        text-align: center;
+    }
+    .sec-1 h1{
+        font-size: 1.2em;
+        width: 70%;
+        text-align: center;
+    }
+    .sec2-inner {
+        flex-direction: column;
+    }
+    main button {
+        padding: 0.8em 1.3em;
+        font-size: 1em;
+    }
+    /*  Bars styling */
+
+
+    nav img {
+        width: 80px;
+    }
+    nav p a {
+        display: none;
+    }
+    nav .main-btns button{
+        padding: 7px 13px;
+        font-size: 0.8em;
+    }
+    nav {
+        padding: 12px 5%;
+    }
+    .sec2-inner div {
+        width: 80%;
+        padding-top: 20px;
+    }
+}

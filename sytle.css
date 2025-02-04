@@ -55,7 +55,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 2em;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.281), rgba(0, 0, 0, 0.301) ), url(/img/back.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.281), rgba(0, 0, 0, 0.301) ), url(img/back.jpg);
     background-position: center;
     background-size: cover;
 }
